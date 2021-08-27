@@ -27,6 +27,9 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
 
+      - id: dump
+        run: echo "${{ toJSON(github) }}"
+        
       - id: token_gen
         name: Generate app installation token
         uses: machine-learning-apps/actions-app-token@0.21
