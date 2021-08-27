@@ -1,5 +1,8 @@
 # Code of Conduct
 
+change 3 
+change 4
+
 At the heart of great collaboration is a common sense of mutual respect and understanding, and the willingness to see the best, not the worst, in each other.
 
 In the context of our collaborative aims for SAP documentation, we subscribe to the [Contributor Covenant][contributor-covenant], a code of conduct for open source communities. Refer to the latest version of that covenant and the standards and guidelines that it contains.
