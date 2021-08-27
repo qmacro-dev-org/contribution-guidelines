@@ -29,8 +29,9 @@ jobs:
     steps:
 
       - id: dump
-        run: echo "${{ toJSON(github) }}"
-        
+        name: debug info
+        run: env && echo "${{ toJSON(github) }}"
+
       - id: token_gen
         name: Generate app installation token
         uses: machine-learning-apps/actions-app-token@0.21
@@ -54,9 +55,8 @@ jobs:
           permission="$(gh api --jq .permission "/repos/$GITHUB_REPOSITORY/collaborators/$GITHUB_ACTOR/permission")"
           echo "repo_permission=$permission" | tee --append "$GITHUB_ENV"
           
-      - id: env
-        run: env    
-
       - id: assign_label
-        if: env.repo_permission != 'admin'
+        if: (
+          github.event.pull_request.author_association == 'NONE' 
+          )
         run: gh pr edit ${{ github.event.number }} --add-label "$LABEL"
