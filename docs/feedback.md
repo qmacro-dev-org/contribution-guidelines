@@ -1,7 +1,7 @@
 # How to Provide Feedback
 
 Of the two types of contribution, providing feedback is the simpler option. The process is similar to most ticketing flows you've have encountered in the past.
-
+x
 ## Creating a New Issue
 
 We use issues on GitHub, and when you follow a link to provide feedback on a particular page of documentation, you're taken automatically to the start of the issue creation workflow. Certain aspects of the new issue will already be set. For example, the issue will be created in the repository that contains the source of the documentation set in question, and that repository belongs to the [SAP-docs](https://github.com/SAP-docs) organization on GitHub.
