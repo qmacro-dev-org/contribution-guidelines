@@ -52,7 +52,7 @@ jobs:
       - id: determine_permission
         name: Look up repository permission level for PR author
         run: |
-          pr_author="$(gh api --jq .user.login "${{ github.event.pull_request.self.href }}")"
+          pr_author="$(gh api --jq .user.login "${{ github.event.pull_request._links.self.href }}")"
           permission="$(gh api --jq .permission "/repos/$GITHUB_REPOSITORY/collaborators/$pr_author/permission")"
           echo "pr_author=$pr_author"
           echo "repo_permission=$permission" | tee --append "$GITHUB_ENV"
