@@ -7,3 +7,4 @@ To this end, in the context of contributions to SAP documentation, we require yo
 The CLA process happens automatically at the point you submit your first pull request. See [The Overall Process](content-contribution/overall-process.md) for more information.
 
 change 1
+change 2
