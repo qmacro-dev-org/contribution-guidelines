@@ -1,5 +1,5 @@
 # Contributing to SAP Documentation
-
+change 5
 SAP documentation is a valuable asset and benefits everyone. While the ownership and responsibility will always remain with SAP for the content, we recognize that the wider community can help make our documentation better.
 
 Your regular use of SAP documentation puts you in a unique position to share your knowledge and help us improve our documentation. We would very much like you to collaborate with us to do that, by offering you the ability to submit contributions.
