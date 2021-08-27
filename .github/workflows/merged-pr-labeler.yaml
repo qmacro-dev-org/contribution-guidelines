@@ -49,7 +49,10 @@ jobs:
         name: Look up actor's repository permission level
         run: |
           permission="$(gh api --jq .permission "/repos/$GITHUB_REPOSITORY/collaborators/$GITHUB_ACTOR/permission")"
-          echo "repo_permission=$permission" >> $GITHUB_ENV
+          echo "repo_permission=$permission" | tee --append "$GITHUB_ENV"
+          
+      - id: env
+        run: env    
 
       - id: assign_label
         if: env.repo_permission != 'admin'
